@@ -7,6 +7,8 @@ alias irc="ssh -i ~/.ssh/id_rsa esuomi@kapsi.fi -t screen -rdU"
 ###                                                 ###
 # env customizations for various tools etc that I use #
 ###                                                 ###
+# Java 1.8 is my thing right now
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # Maven is a memory hog
 export MAVEN_OPTS="-Xmx1024m -Xms512m"
 export EDITOR='vi'
@@ -37,8 +39,18 @@ function git-scrub() {
 # Python virtualenv config #
 ###                      ###
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/code
+export PROJECT_HOME=$HOME/code/python
 source /usr/local/bin/virtualenvwrapper.sh
+
+###            ###
+# Docker helpers #
+###            ###
+function docker-scrub() {
+  # Delete all stopped containers
+  docker ps -q -f status=exited | xargs --no-run-if-empty docker rm
+  # Delete all dangling (unused) images
+  docker images -q -f dangling=true | xargs --no-run-if-empty docker rmi
+}
 
 ###                                                          ###
 # Powerline theme and its customizations for zsh               #
