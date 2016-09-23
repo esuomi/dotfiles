@@ -1,0 +1,29 @@
+# Install Caskroom for Homebrew
+
+brew tap caskroom/cask
+brew install brew-cask
+
+# Install packages
+
+apps=(
+  acorn                
+  ccleaner             
+  font-hack
+  obs
+  sublime-text3
+  atom         
+  docker
+  gitx
+  spectacle
+  visualvm
+  audacity
+  dropbox
+  google-chrome
+  spotify
+  beyond-compare
+  flux
+  intellij-idea
+  steam
+)
+
+brew cask install "${apps[@]}"

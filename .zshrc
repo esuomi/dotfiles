@@ -12,8 +12,10 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # Maven is a memory hog
 export MAVEN_OPTS="-Xmx1024m -Xms512m"
 export EDITOR='vi'
+
 # Allow the use of cmdline tools with Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/esko.suomi/.oh-my-zsh
 
