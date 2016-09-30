@@ -8,3 +8,7 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/brew-cask.sh"
+
+# Post-installation configuration steps
+
+. "$DOTFILES_DIR/install/post.sh"
