@@ -25,5 +25,6 @@ apps=(
   tmux
   watch
   zsh
+  s3cmd
 )
 brew install "${apps[@]}"
