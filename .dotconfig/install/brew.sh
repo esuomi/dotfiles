@@ -26,5 +26,6 @@ apps=(
   watch
   zsh
   s3cmd
+  groovy
 )
 brew install "${apps[@]}"
