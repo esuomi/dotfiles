@@ -43,6 +43,15 @@ function git-scrub() {
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/code/python
 source /usr/local/bin/virtualenvwrapper.sh
+# matplotlib frameworkpython workaround for virtualenv
+# http://matplotlib.org/faq/virtualenv_faq.html#pythonhome-function
+function frameworkpython {
+    if [[ ! -z "$VIRTUAL_ENV" ]]; then
+        PYTHONHOME=$VIRTUAL_ENV /usr/local/bin/python "$@"
+    else
+        /usr/local/bin/python "$@"
+    fi
+}
 
 ###            ###
 # Docker helpers #
