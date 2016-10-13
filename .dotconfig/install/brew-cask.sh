@@ -24,6 +24,7 @@ apps=(
   flux
   intellij-idea
   steam
+  lighttable
 )
 
 brew cask install "${apps[@]}"
