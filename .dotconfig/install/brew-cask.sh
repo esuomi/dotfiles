@@ -13,7 +13,7 @@ apps=(
   sublime-text3
   atom         
   docker
-  gitx
+  rowanj-gitx
   spectacle
   visualvm
   audacity
