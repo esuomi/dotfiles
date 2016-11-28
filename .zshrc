@@ -1,6 +1,6 @@
-###            ###
-# Custom aliases #
-###            ###
+# load SSH keys into the keychain
+ssh-add -A 2>/dev/null;
+
 # jump straight to Kapsi IRC
 alias irc="ssh -i ~/.ssh/id_rsa esuomi@kapsi.fi -t screen -rdU"
 
