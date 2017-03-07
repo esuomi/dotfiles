@@ -9,7 +9,6 @@ brew upgrade
 # Install packages
 
 apps=(
-  ansible
   coreutils
   fswatch
   gnu-sed
