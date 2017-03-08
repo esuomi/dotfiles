@@ -16,6 +16,7 @@ apps=(
   htop-osx
   jq
   leiningen
+  boot-clj
   libksba
   maven
   node
