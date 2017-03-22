@@ -12,6 +12,7 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Install python preset virtualenvs
 
 . "$DOTFILES_DIR/install/python/virtualenv.sh openstack-dev"
+. "$DOTFILES_DIR/install/python/virtualenv.sh aws-dev"
 
 # Post-installation configuration steps
 
