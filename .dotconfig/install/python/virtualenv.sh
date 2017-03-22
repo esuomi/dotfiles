@@ -18,11 +18,13 @@ if pip freeze | cut -d '=' -f 1 | grep -q -e "^virtualenv$"; then
   echo 'virtualenv already installed'
 else
   echo 'installing virtualenv'
-  #pip install virtualenv
+  pip install virtualenv
 fi
+echo "Activating virtualenv..."
+source /usr/local/bin/virtualenvwrapper.sh
 
 echo "creating virtualenv $VIRTUALENV_NAME"
-#mkvirtualenv $VIRTUALENV_NAME
+mkvirtualenv $VIRTUALENV_NAME
 
 VIRTUALENV_REQS=$(dirname "$(realpath "$0")")/${VIRTUALENV_NAME}.txt
 echo "populating $VIRTUALENV_NAME with requirements from config file $VIRTUALENV_REQS"
