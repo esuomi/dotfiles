@@ -30,3 +30,6 @@ apps=(
   groovy
 )
 brew install "${apps[@]}"
+
+# Update pip to latest
+pip install --upgrade pip

@@ -23,6 +23,9 @@ fi
 echo "Activating virtualenv..."
 source /usr/local/bin/virtualenvwrapper.sh
 
+echo 'Updating pip...'
+pip install --upgrade pip
+
 echo "creating virtualenv $VIRTUALENV_NAME"
 mkvirtualenv $VIRTUALENV_NAME
 
