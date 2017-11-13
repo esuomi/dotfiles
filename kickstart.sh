@@ -14,6 +14,10 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . "$DOTFILES_DIR/install/python/virtualenv.sh openstack-dev"
 . "$DOTFILES_DIR/install/python/virtualenv.sh aws-dev"
 
-# Post-installation configuration steps
+# OS related configuration
 
-. "$DOTFILES_DIR/install/post.sh"
+. "$DOTFILES_DIR/install/osconfig.sh"
+
+# Shell related configuration
+
+. "$DOTFILES_DIR/install/shell.sh"
