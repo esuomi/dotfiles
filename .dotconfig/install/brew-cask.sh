@@ -1,13 +1,9 @@
-# Install Caskroom for Homebrew
-
-brew tap caskroom/cask
-brew install brew-cask
-
-# Install packages
+# Install applications
 
 apps=(
   acorn                
   ccleaner             
+  dropbox
   font-hack
   obs
   sublime-text3
@@ -23,6 +19,10 @@ apps=(
   beyond-compare
   flux
   intellij-idea
+  iterm
+  fanny
+  amphetamine
+  cathode
   steam
   lighttable
 )

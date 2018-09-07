@@ -10,24 +10,18 @@ brew upgrade
 
 apps=(
   coreutils
+  f3
   fswatch
+  gawk
   gnu-sed
   gnupg
-  htop-osx
+  htop
+  jenv
   jq
-  leiningen
-  boot-clj
-  libksba
-  maven
-  node
-  python
-  rethinkdb
+  plantuml
   the_silver_searcher
-  tmux
-  watch
+  tree
   zsh
-  s3cmd
-  groovy
 )
 brew install "${apps[@]}"
 
