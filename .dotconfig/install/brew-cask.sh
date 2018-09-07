@@ -21,7 +21,6 @@ apps=(
   intellij-idea
   iterm
   fanny
-  amphetamine
   cathode
   steam
   lighttable
