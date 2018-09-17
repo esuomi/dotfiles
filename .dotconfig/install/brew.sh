@@ -22,6 +22,9 @@ apps=(
   the_silver_searcher
   tree
   zsh
+  zsh-autosuggestions
+  zsh-completions
+  zsh-syntax-highlighting
 )
 brew install "${apps[@]}"
 
